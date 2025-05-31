@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Narváez Gómez | Portafolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/573022777512" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Felipe<span>NG</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-text">
+                        <h1>Hola, soy <span>Felipe Narváez Gómez</span></h1>
+                        <p class="subtitle">Desarrollador y diseñador creativo</p>
+                        <p class="inspirational">"La creatividad es la inteligencia divirtiéndose" - Albert Einstein</p>
+                        <a href="#portfolio" class="btn">Ver mi trabajo</a>
+                    </div>
+                    <div class="home-image">
+                        <img src="images/felipe-profile.jpg" alt="Felipe Narváez Gómez">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>¡Hola! Soy Felipe Narváez Gómez, un apasionado por la tecnología y el diseño.</p>
+                
+                <!-- Contenedor del video de YouTube Shorts -->
+                <div class="video-container youtube-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/VL0hbQCzGs4?autoplay=0&controls=1&rel=0" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <p class="video-caption">Un vistazo a mi trabajo diario</p>
+                </div>
+                
+                <p>Actualmente dedico mi tiempo a desarrollar aplicativos para empresas, donde combino mis habilidades técnicas con mi creatividad para desarrollar soluciones innovadoras.</p>
+                <p>Mis metas profesionales incluyen especializarme en desarrollo frontend y diseño UX/UI, trabajando en proyectos que impacten positivamente a las personas. Personalmente, aspiro a mantener un equilibrio entre mi vida profesional y hobbies.</p>
+            </div>
+            <div class="skills">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Diseño UI/UX</li>
+                    <li>Automatización</li>
+                    <li>Gestión de redes sociales</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Diseño Web</h3>
+                        <p>Creación de interfaces modernas, intuitivas y responsivas que mejoran la experiencia del usuario.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-hashtag"></i>
+                        <h3>Redes Sociales</h3>
+                        <p>Gestión y estrategia de contenido para redes sociales que aumentan tu presencia digital.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>Automatización</h3>
+                        <p>Soluciones de automatización para optimizar tus procesos y aumentar la productividad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Portafolio</h2>
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Projects will be loaded dynamically from Firebase -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                        <p id="form-status"></p>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Información de contacto</h3>
+                        <p><i class="fas fa-envelope"></i> felipe.nago898@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +57 302 2777512</p>
+                        <div class="social-links">
+                            <a href="https://github.com/FelipeING898?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/felipe-narvaez-a451362b6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/felipenago/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Creado por Felipe Narvaez Gomez.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- Reemplaza las versiones anteriores con estas -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 

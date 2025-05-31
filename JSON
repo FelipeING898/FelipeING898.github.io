@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "project1": {
+      "title": "Diseño de Sitio Web",
+      "description": "Un sitio web moderno y responsivo para una empresa local.",
+      "image": "https://via.placeholder.com/600x400",
+      "link": "https://ejemplo.com"
+    },
+    "project2": {
+      "title": "Campaña en Redes Sociales",
+      "description": "Estrategia y contenido para redes sociales de una marca.",
+      "image": "https://via.placeholder.com/600x400",
+      "link": "https://instagram.com/ejemplo"
+    }
+  }
+}
